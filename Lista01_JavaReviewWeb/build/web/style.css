@@ -1,0 +1,79 @@
+/* Estilos para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Estilos para o formulário */
+form {
+    width: 75%;
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para o campo de entrada */
+input[type="number"] {
+    width: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Estilos para a tabela */
+table {
+    width: 75%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: #f2f2f2; /* Light gray background */
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 5px;
+}
+/* Styles for the table header cells */
+th {
+    background-color: #0056b3; /* Darker blue background color */
+    color: #fff; /* White text color */
+    padding: 10px;
+    text-align: center;
+}
+
+/* Styles for the table data cells */
+td {
+    background-color: #fff; /* White background color */
+    color: #333; /* Dark gray text color */
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc; /* Gray border */
+    transition: background-color 0.3s; /* Add transition for smoother hover effect */
+}
+
+/* Hover effect for table data cells */
+td:hover {
+    background-color: #f2f2f2; /* Light gray background color on hover */
+}
+
+/* Style the table on hover */
+/*table:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow on hover 
+}*/
+
+/* Styles for the Calculate button */
+button#calculateButton {
+    background-color: #007BFF; /* Blue background color */
+    color: #fff; /* White text color */
+    padding: 10px 20px; /* Padding for better appearance */
+    border: none; /* Remove the default button border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Change cursor on hover */
+}
+
+/* Style the button on hover */
+button#calculateButton:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
