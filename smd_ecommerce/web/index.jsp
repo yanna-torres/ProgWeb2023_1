@@ -8,8 +8,8 @@
     <body>
         <h1>Sign-in</h1>
         <form action="Login" method="POST">
-            <input type="text" name="login" placeholder="Entre com seu login">
-            <input type="password" name="senha">
+            <input type="text" name="login" placeholder="Entre com seu login" required>
+            <input type="password" name="password" placeholder="Senha" required>
             <input type="submit" value="Submit">
         </form>
     </body>
