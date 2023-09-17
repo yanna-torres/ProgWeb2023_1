@@ -3,7 +3,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>SMD E-commerce</title>
+        <title>SMD E-commerce - Login</title>
     </head>
     <body>
         <h1>Sign-in</h1>
@@ -12,5 +12,6 @@
             <input type="password" name="password" placeholder="Senha" required>
             <input type="submit" value="Submit">
         </form>
+        <a href="register.jsp">Cadastre-se</a>
     </body>
 </html>
