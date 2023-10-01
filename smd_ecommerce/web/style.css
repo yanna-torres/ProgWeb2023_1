@@ -1,0 +1,33 @@
+/* 
+    Created on : 24 de set. de 2023, 13:37:56
+    Author     : Yanna
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin-top: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 30%;
+    align-items: center;
+}
+
+form {
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #8A94A0;
+    font-size: 16px;
+}
