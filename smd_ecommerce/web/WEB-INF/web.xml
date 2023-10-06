@@ -2,7 +2,11 @@
 <web-app version="4.0" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd">
     <servlet>
         <servlet-name>LoginServlet</servlet-name>
-        <servlet-class>access.LoginServlet</servlet-class>
+        <servlet-class>controller.access.LoginServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>RegisterClientServlet</servlet-name>
+        <servlet-class>controller.client.RegisterClientServlet</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>InsertClientServlet</servlet-name>
@@ -13,8 +17,13 @@
         <url-pattern>/Login</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
+<<<<<<< HEAD
         <servlet-name>InsertClientServlet</servlet-name>
         <url-pattern>/InsertClient</url-pattern>
+=======
+        <servlet-name>RegisterClientServlet</servlet-name>
+        <url-pattern>/RegisterClient</url-pattern>
+>>>>>>> b51b615b7a547c521a21be83126503dc043c061e
     </servlet-mapping>
     <session-config>
         <session-timeout>

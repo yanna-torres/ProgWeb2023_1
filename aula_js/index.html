@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="br">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,30 +8,32 @@
         <title>Aula JS</title>
     </head>
     <body>
-        <form>
+        <form onsubmit="return validarCampos()">
+            <h1>Teste de validação com JS</h1>
             <label>Nome:</label>
             <input type="text" id="name" name="name" required>
             <label>Cores:</label>
             <div id="colors">
-                <input type="radio" name="cor" id="red" required> Vermelha
+                <input type="radio" name="cor" id="red" required> &nbsp;Vermelha
                 <span id="span-red"></span>
-                <input type="radio" name="cor" id="blue" required> Azul
+                <input type="radio" name="cor" id="blue" required> &nbsp;Azul
                 <span id="span-blue"></span>
-                <input type="radio" name="cor" id="green" required> Verde
+                <input type="radio" name="cor" id="green" required>&nbsp; Verde
                 <span id="span-green"></span>
             </div>
             <div>
-                <label>Você aceita os termos:</label>
-                <input type="checkbox" id="accept" required> Aceito
+                <label>Você aceita os termos?</label>
+                <input type="checkbox" id="accept" required> &nbsp;Aceito
             </div>
             <label>Profissão:</label>
             <select id="profission">
-                <option value="item1">Designer</option>
-                <option value="item2">Analista de Requisitos</option>
-                <option value="item3">Dev</option>
-                <option value="item3">Gerente</option>
+                <option value="">Escolha uma opção</option>
+                <option value="1">Designer</option>
+                <option value="2">Analista de Requisitos</option>
+                <option value="3">Dev</option>
+                <option value="3">Gerente</option>
             </select>
-            <input type="submit">
+            <input type="submit" value="Enviar">
         </form>
         <script src="script.js"></script>
     </body>
