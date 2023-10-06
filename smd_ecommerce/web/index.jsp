@@ -3,18 +3,17 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link rel="stylesheet" href="style.css">
-        <title>SMD E-commerce - Login</title>
+        <title>smd e-commerce</title>
     </head>
     <body>
-        <div class="container">
-            <h1>Sign-in</h1>
-            <form action="Login" method="POST">
-                <input type="text" name="login" placeholder="Entre com seu login" required>
-                <input type="password" name="password" placeholder="Senha" required>
-                <input type="submit" value="Submit">
-            </form>
-            <a href="register.jsp">Cadastre-se</a>
-        </div>
+        <h1>Identificação do Usuário</h1>
+        <form action="Login" method="post">
+            <input type="text" name="login" placeholder="Entre com seu login" />
+            <br/>
+            <input type="password" name="senha" placeholder="Entre com sua senha" />
+            <br/>
+            <input type="submit" value="Entrar" />
+        </form>
+        <a href="register.jsp">Cadastre-se</a>
     </body>
 </html>

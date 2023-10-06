@@ -5,25 +5,16 @@
         <servlet-class>controller.access.LoginServlet</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>RegisterClientServlet</servlet-name>
-        <servlet-class>controller.client.RegisterClientServlet</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>InsertClientServlet</servlet-name>
-        <servlet-class>client.InsertClientServlet</servlet-class>
+        <servlet-name>RegisterServlet</servlet-name>
+        <servlet-class>controller.client.RegisterServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>LoginServlet</servlet-name>
         <url-pattern>/Login</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-<<<<<<< HEAD
-        <servlet-name>InsertClientServlet</servlet-name>
-        <url-pattern>/InsertClient</url-pattern>
-=======
-        <servlet-name>RegisterClientServlet</servlet-name>
-        <url-pattern>/RegisterClient</url-pattern>
->>>>>>> b51b615b7a547c521a21be83126503dc043c061e
+        <servlet-name>RegisterServlet</servlet-name>
+        <url-pattern>/Register</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

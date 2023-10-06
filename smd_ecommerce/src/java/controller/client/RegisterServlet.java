@@ -14,39 +14,32 @@ import model.user.UserDAO;
 
 /**
  *
- * @author Yanna
+ * @author aluno
  */
-public class RegisterClientServlet extends HttpServlet {
+public class RegisterServlet extends HttpServlet {
 
-    /**
-     * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
-     * methods.
-     *
-     * @param request servlet request
-     * @param response servlet response
-     * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
-     */
+    @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        String name = request.getParameter("name");
-        String address = request.getParameter("address");
+        String nome = request.getParameter("nome");
+        String endereco = request.getParameter("endereco");
         String email = request.getParameter("email");
         String login = request.getParameter("login");
-        String password = request.getParameter("password");
-        
-        UserDAO userDAO = new UserDAO();
-        boolean success = userDAO.insertClient(name, address, email, login, password);
+        String senha = request.getParameter("senha");
+
+        UserDAO usuarioDAO = new UserDAO();
+        boolean sucesso = usuarioDAO.inserirCliente(nome, endereco, email, login, senha);
+
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
-            if (success) {
+            if (sucesso) {
                 out.println("<!DOCTYPE html>");
                 out.println("<html>");
                 out.println("<head>");
                 out.println("<title>smd e-commerce</title>");
                 out.println("</head>");
                 out.println("<body>");
-                out.println("<h1>" + ((success) ? "Cliente cadastrado com sucesso!" : "Não foi possível cadastrar este cliente") + "</h1>");
+                out.println("<h1>" + ((sucesso) ? "Cliente cadastrado com sucesso!" : "Não foi possível cadastrar este cliente") + "</h1>");
                 out.println("</body>");
                 out.println("</html>");
             } else {
